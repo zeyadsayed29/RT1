@@ -1,0 +1,30 @@
+.head-line{
+  position: relative;
+}
+i{
+  z-index: 2;
+  color: black;
+}
+i::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  transform: translateX(50%);
+  background-color: black;
+  height: 4px;
+  width: 100px;
+  z-index: 1
+  ;
+}
+i::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  transform: translateX(-130%);
+  background-color: black;
+  height: 4px;
+  width: 100px;
+  color: none;
+  z-index: 1;
+}
+
